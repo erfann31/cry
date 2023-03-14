@@ -6,7 +6,7 @@ def text_to_binary(text):
 
 
 def split_binary(binary):
-    midpoint = len(binary) // 2
+    midpoint = len(binary) // 2+1
     left = binary[:midpoint]
     right = binary[midpoint:]
     return left, right
