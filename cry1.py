@@ -6,7 +6,7 @@ def text_to_binary(text):
 
 
 def split_binary(binary):
-    midpoint = len(binary) // 2+1
+    midpoint = len(binary) // 2
     left = binary[:midpoint]
     right = binary[midpoint:]
     return left, right
@@ -16,7 +16,7 @@ def xor_binary(a, b):
     result = ""
     for i in range(len(a)):
         if a[i] == b[i]:
-            result += "0"
+            result += "00"
         else:
             result += "1"
     return result
